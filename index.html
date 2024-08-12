@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <!---google style sheet for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <!--fontawesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--My style sheet-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar">
+        <div class="navbar__sec1">
+            <img class="logo" src="t2.png">
+            <h1 class="navbar__sec1__title"> Tripadvisor</h1>
+        </div>
+        <div class="navbar__sec2">
+            <p>Discover</p>
+            <p>Trips</p>
+            <p>Review</p>
+            <p>Forums</p>
+
+        </div>
+        <div class="navbar__sec3">
+            <i class="fa-solid fa-language" style="color: #000000;"></i>
+            <p>|INR</p>
+            <button class="btn1">Sign in</button>
+        </div>
+    </div>
+    
+    <!--categories-->
+    <div class="categories">
+        <h1 class="">Where to ?</h1>
+        <p><i class="fa-solid fa-magnifying-glass" style="color: #000000;"> </i>Search All</p>
+        <p><i class="fa-solid fa-hotel" style="color: #000000;"></i>Hotels</p>
+        <p></p> <i class="fa-solid fa-umbrella-beach" style="color: #000000;"></i>Things to do</p>
+        <p></p> <i class="fa-solid fa-utensils" style="color: #000000;"></i>Restaurants</p>
+        <p></p><i class="fa-solid fa-plane-departure" style="color: #000000;"></i>Flights</p>
+        <p></p><i class="fa-solid fa-house" style="color: #000000;"></i>Holiday Homes</p>
+    </div>
+    <!--searchbar-->
+    <div class="box">
+        <i class="fa-solid fa-magnifying-glass" style="color: #000000;"> </i>
+        <input class="search" type="search" placeholder="Places to go,things to do,hotels....">
+        <button class="btn">Search</button>
+
+    </div>
+    <!--trip-image-->
+    <div class="trip-image">
+        <img src="images (2).jpeg" alt="trip image">
+        <div class="trip-image__img">
+            <h2>
+                Build a trip in minutes
+            </h2>
+            <p class="para">
+                Get a personalised itinerary just for you, guided by traveller tips and reviews.
+            </p>
+            <p class="loc"><i class="fa-solid fa-location-dot"></i>
+                Start a trip with AI</p>
+
+        </div>
+    </div>
+    <div class="trip_sec1">
+        <h3>Go on an award-winning adventure </h3>
+        <p>2024’s Travellers’ Choice Awards Best of the Best Things To Do</p>
+        <div class="carouselcard">
+            <div class="carouseltrack">
+                <div class="carouselslide">
+                    <img src="ta.jpeg" alt="dc2">
+                    <h2 class="textoverlay">Top Attraction</h2>
+                </div>
+
+                <div class="carouselslide">
+                    <img src="bl.jpeg" alt="dc1">
+                    <h2 class="textoverlay">Bucket List</h2>
+                </div>
+                <div class="carouselslide">
+                    <img src="fd.jpeg" alt="dc1">
+                    <h2 class="textoverlay">Food & Drink</h2>
+                </div>
+                <div class="carouselslide">
+                    <img src="exp.jpeg" alt="dc1">
+                    <h2 class="textoverlay">Top Experiances</h2>
+                </div>
+                <div class="carouselslide">
+                    <img src="ch.jpeg" alt="dc1">
+                    <h2 class="textoverlay">Cultural & Historic</h2>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div class="trip_sec2">
+        <h3> Top experiences on Tripadvisor</h3>
+        <p>The best tours, activities and tickets</p>
+        <div class="carouselcard1">
+            <div class="carouseltrack1">
+                <div class="carouselslide1">
+                    <img src="exp2.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>All Exclusive Ubud Private tour</h4>
+                    <p>🟢🟢🟢🟢🟢🟢11,201</p>
+                    <p>from $8176 per adult</p>
+                </div>
+
+
+
+                <div class="carouselslide1">
+                    <img src="exp1.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Tokyo 6hrs private tour</h4>
+                    <p>🟢🟢🟢🟢🟢12,301</p>
+                    <p>from $12,564 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="exp3.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Lion City of Singapore</h4>
+                    <p>🟢🟢🟢🟢🟢16000</p>
+                    <p>from $7568 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="exp5.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>City of Delhi</h4>
+                    <p>🟢🟢🟢🟢🟢14,301</p>
+                    <p>from $8236 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="exp4.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>City of Floating Market</h4>
+                    <p>🟢🟢🟢🟢🟢10,030</p>
+                    <p>from $13,000 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="exp6.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Korea Tour From seoul</h4>
+                    <p>🟢🟢🟢🟢🟢40,890</p>
+                    <p>from $20,500 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="exp7.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>City of Honk Kong</h4>
+                    <p>🟢🟢🟢🟢🟢25,890</p>
+                    <p>from $30,050 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="exp8.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Adventures island</h4>
+                    <p>🟢🟢🟢🟢🟢42,345</p>
+                    <p>from $8143 per adult</p>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+
+        </div>
+
+    </div>
+    <div class="trip_sec3">
+        <h3> Explore beautiful Bali</h3>
+        <p>Check out waterfalls, temples, and Balinese food</p>
+        <div class="carouselcard1">
+            <div class="carouseltrack1">
+                <div class="carouselslide1">
+                    <img src="Ba1.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>All Exclusive Ubud-1Private tour</h4>
+                    <p>🟢🟢🟢🟢🟢🟢11,201</p>
+                    <p>from $8176 per adult</p>
+                </div>
+
+
+
+                <div class="carouselslide1">
+                    <img src="Ba2.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Waterfall Gorilla cave</h4>
+                    <p>🟢🟢🟢🟢🟢12,301</p>
+                    <p>from $12,564 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="Ba3.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Sunset Hike</h4>
+                    <p>🟢🟢🟢🟢🟢16000</p>
+                    <p>from $7568 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="Ba4.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Bali Snorkling Tour</h4>
+                    <p>🟢🟢🟢🟢🟢14,301</p>
+                    <p>from $8236 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="ba5.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Tanah loat North Bali Tour</h4>
+                    <p>🟢🟢🟢🟢🟢10,030</p>
+                    <p>from $13,000 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="Ba6.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Monkey Forest,Jungle</h4>
+                    <p>🟢🟢🟢40,890</p>
+                    <p>from $20,500 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="Ba7.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Best Of Bali</h4>
+                    <p>🟢🟢🟢🟢🟢25,890</p>
+                    <p>from $30,050 per adult</p>
+                </div>
+
+
+                <div class="carouselslide1">
+                    <img src="Ba8.jpeg" alt="ex1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h4>Balinese cooking Sdchool</h4>
+                    <p>🟢🟢🟢🟢42,345</p>
+                    <p>from $8143 per adult</p>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+
+        </div>
+        <div class="box1">
+            <img src="ad.jpeg">
+            <h1>See Something You Love ? Click The Heart To Save it.</h1>
+            <h3>And See All Your Saved Travel Ideas On Map</h3>
+            <button class="Btn2">GET STARTED</button>
+        </div>
+    </div>
+    <div class="trip_sec4">
+        <h1>More to explore</h1>
+        <div class="carouselcard">
+            <div class="carouseltrack2">
+                <div class="carouselslide2">
+                    <img src="Me.jpg" alt="dc2">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h3>10 incredible visit in the world</h3>
+                </div>
+
+                <div class="carouselslide2">
+                    <img src="me1.jpg" alt="dc1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h3>7 Bankok hotels that highlight Thailand spectacular architecture</h3>
+                </div>
+                <div class="carouselslide2">
+                    <img src="me2.jpg" alt="dc1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h3>3 days in Tokyo:perfect itinerary</h3>
+                </div>
+                <div class="carouselslide2">
+                    <img src="me4.jpg" alt="dc1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h3>Where Bali's best chefs go on their days off</h3>
+                </div>
+                <div class="carouselslide2">
+                    <img src="me5.jpg" alt="dc1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h3>6 incredible to visit near phuket</h3>
+                </div>
+                <div class="carouselslide2">
+                    <img src="me6.jpg" alt="dc1">
+                    <i class="fa-brands fa-gratipay" style="color: #000000;"></i>
+                    <h3>3 perfect days in Chinang Mai</h3>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div class="trip_sec5">
+        <h3>Dream Your Next Trip </h3>
+        <p>Weekend getaways from Budhlada R</p>
+
+
+        <div class="carouselcard">
+            <div class="carouseltrack3">
+                <div class="carouselslide3">
+                    <img src="dt1.jpg" alt="dc2">
+                    <h2 class="textoverlay">New Delhi,India</h2>
+                </div>
+
+                <div class="carouselslide3">
+                    <img src="dt2.jpg" alt="dc1">
+                    <h2 class="textoverlay">Guruguram,India</h2>
+                </div>
+                <div class="carouselslide3">
+                    <img src="dt3.jpg" alt="dc1">
+                    <h2 class="textoverlay">Amirstar,India</h2>
+                </div>
+                <div class="carouselslide3">
+                    <img src="dt4.jpg" alt="dc1">
+                    <h2 class="textoverlay">Rishikesh,India</h2>
+                </div>
+                <div class="carouselslide3">
+                    <img src="dt6.jpg" alt="dc1">
+                    <h2 class="textoverlay">Agra ,India</h2>
+                </div>
+                <div class="carouselslide3">
+                    <img src="dt7.jpg" alt="dc1">
+                    <h2 class="textoverlay">Mussoorie,India</h2>
+                </div>
+
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div class="trip_sec6">
+        <h3>Top destinations for your next holiday</h3>
+        <p>Here's where your fellow travellers are headed</p>
+
+
+        <div class="carouselcard">
+            <div class="carouseltrack4">
+                <div class="carouselslide4">
+                    <img src="td1.jpg" alt="dc2">
+                    <h2 class="textoverlay">Ubud,Indonesia</h2>
+                </div>
+
+                <div class="carouselslide4">
+                    <img src="td2.jpg" alt="dc1">
+                    <h2 class="textoverlay">Pattaya,Thailand</h2>
+                </div>
+                <div class="carouselslide4">
+                    <img src="td3.jpg" alt="dc1">
+                    <h2 class="textoverlay">Dubai,UAE</h2>
+                </div>
+                <div class="carouselslide4">
+                    <img src="td4.jpg" alt="dc1">
+                    <h2 class="textoverlay">Singapore,Singapore</h2>
+                </div>
+                <div class="carouselslide4">
+                    <img src="td5.jpg" alt="dc1">
+                    <h2 class="textoverlay">Bankok,Thailand</h2>
+                </div>
+                <div class="carouselslide4">
+                    <img src="td6.jpg" alt="dc1">
+                    <h2 class="textoverlay">Udhaipur,India</h2>
+                </div>
+                <div class="carouselslide4">
+                    <img src="td7.jpg" alt="dc1">
+                    <h2 class="textoverlay">Lonovala,India</h2>
+                </div>
+                <div class="carouselslide4">
+                    <img src="td8.jpg" alt="dc1">
+                    <h2 class="textoverlay">Da Nang,Vietnam</h2>
+                </div>
+
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    <div class="add">
+        <img src="add.jpg">
+        <p class="head">Sponsored by Wanderlab</p>
+        <h2>Watch The Wanderer </h2>
+        <p class="title">Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video</p>
+        <button class="btn3">Learn More</button>
+    </div>
+    <div class="box2">
+    <div class="end">
+        <div class="endsec1">
+            <p>About Tripadvisor</p>
+            <p>About Us</p>
+            <p>Press</p>
+            <p>Resources and Policies</p>
+            <p>Careers</p>
+            <p>Trust and safety</p>
+            <p>Contact Us</p>
+            <p>Accessbility Statements</p>
+        </div>
+        <div class="endsec2">
+            <p>Explore</p>
+            <p>Write a Review</p>
+            <p>Add a place</p>
+            <p>join</p>
+            <p>Travellers’'s choice</p>
+            <p>Green Leaders</p>
+            <p>Help Center</p>
+            <p>Travel Articles</p>
+        </div>
+        <div class="endsec3">
+            <p>Do Business With Us</p>
+            <p>Owners & DMO/CVB</p>
+            <p>Business Advantage</p>
+            <p>Sponsored Placements</p>
+            <p>Access our Content API</p>
+            <p>Get The App</p>
+            <p>iPhone App</p>
+            <p>Android App </p>
+        </div>
+        <div class="endsec4">
+            <p>Tripadvisor Sites</p>
+            <p>Book tours and attraction tickets on Viator</p>
+
+        </div>
+        <div class="end2">
+            <input class="bn1" type="text" placeholder="inr">
+            <input class="bn2" type="text" placeholder="India">
+            <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+            <i class="fa-brands fa-x-twitter" style="color: #000000;"></i>
+            <i class="fa-brands fa-pinterest" style="color: #000000;"></i>
+            <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+        </div>
+    </div>
+    <div class="end1">
+        <img src="t2.png">
+        <p>© 2024 Tripadvisor LLC All rights reserved.</p>
+        <p>Terms of Use</p>
+        <p>Privacy and Cookies Statement</p>
+        <p> Cookie consent</p>
+        <p>Site Map</p>
+        <p>How the site works</p>
+        <p>Contact us</p>
+        <h6>This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more</h6>
+
+    </div>
+    
+
+</div>
+
+
+</body>
+</html>
